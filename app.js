@@ -29,7 +29,7 @@ const addTeamMember = () => {
                             ask.Id,
                             ask.Email,
                             next.officeNum));
-                            final();
+                        final();
                     });
             } else if (ask.Role === 'Engineer') {
                 inquirer.prompt([{
@@ -43,7 +43,7 @@ const addTeamMember = () => {
                         ask.Id,
                         ask.Email,
                         next.github));
-                        final();
+                    final();
                 })
             } else if (ask.Role === 'Intern') {
                 inquirer.prompt([{
@@ -58,7 +58,7 @@ const addTeamMember = () => {
                             ask.Id,
                             ask.Email,
                             next.school));
-                            final();
+                        final();
                     });
             } else {
                 return 'Invalid input yo';
@@ -74,11 +74,11 @@ const final = () => {
         name: 'last'
     }]).then(function (next) {
         console.log(`You have chosen ${next.last}`);
-        if(next.last === 'No') {
+        if (next.last === 'No') {
             addTeamMember();
         } else {
             let teamrender = render(teamBuild);
-            fs.writeFile("index.html", render(teamBuild), function(res, err) {
+            fs.writeFile("index.html", render(teamBuild), function (next, err) {
                 if (err) {
                     throw err;
                 } else {
