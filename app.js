@@ -34,3 +34,14 @@ const render = require("./lib/htmlRenderer");
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
+
+// function to initialize program
+const init = () => {
+    inquirer.prompt(questions)
+    .then(function (data) {
+        writeToFile('NEW_README.md', generateReadme(data))
+    })
+}
+
+// function call to initialize program
+init();
