@@ -9,7 +9,7 @@ This is my README for Assignment 9
 
 Page is live: [Video]( )
 
-![Should Look like this lol](/Assets/10-OOP-homework-demo-1.png)
+![Should Look like this lol](/Assets/app.js.gif)
 # Installation
 * Learn Node CLI and Inquirer npm magic!
 * Get Motivated
